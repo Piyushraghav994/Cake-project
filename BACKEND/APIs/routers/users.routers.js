@@ -1,4 +1,4 @@
-const express = require("express");
+const { Router } = require("express");
 const {
    registieredUser,
    authUser,
@@ -6,7 +6,7 @@ const {
 
 } = require("../controllers/userController");
 const { protect } = require("../middleware/authUser");
-const userRouter = express.Router();
+const userRouter = Router();
 
 userRouter.route("/").post(registieredUser).get(protect, _user);
 userRouter.post("/login", authUser);
