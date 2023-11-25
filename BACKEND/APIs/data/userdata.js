@@ -16,9 +16,9 @@ const users = [
    },
    {
       id: 2,
-      name: "Raka",
-      age: 20,
-      work: "Digitak Marketer",
+      name: "Piyush",
+      age: 21,
+      work: "Singer",
       hobbies: [
          "Playing Football",
          "Photography",
@@ -28,8 +28,8 @@ const users = [
    },
    {
       id: 3,
-      name: "Pulkit",
-      age: 17,
+      name: "Jyotsana",
+      age: 21,
       work: "Backend developer",
       hobbies: [
          "Playing instruments",
@@ -40,7 +40,7 @@ const users = [
    },
    {
       id: 4,
-      name: "Sachin Duhan",
+      name: "Saksham kumar",
       age: 26,
       work: "full-stack developer",
       hobbies: [
