@@ -1,42 +1,56 @@
 <!DOCTYPE html>
 <html lang="en">
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Registartion form</title>
+      <link rel="stylesheet" href="registration.css" />
+   </head>
 
-<head>
-        <meta charset="UTF-8">
-        <meta name="viewport" content="width=device-width, initial-scale=1.0">
-        <title>Registartion form</title>
-        <link rel="stylesheet" href="registration.css">
-</head>
+   <body>
+      <div class="main">
+         <div class="register">
+            <div class="userNames">
+               <div class="fName">
+                  <span>First Name</span>
+                  <input
+                     type="text"
+                     id="firstName"
+                     placeholder="Enter Your First Name"
+                  />
+               </div>
+               <div class="lName">
+                  <span>Last Name</span>
+                  <input
+                     type="text"
+                     id="lastName"
+                     placeholder="Enter Your Last Name"
+                  />
+               </div>
+            </div>
+            <div class="email">
+               <span>Email</span>
+               <input
+                  type="text"
+                  id="email"
+                  placeholder="Enter Your Email Id"
+               />
+            </div>
+            <div class="password">
+               <span>Password</span>
+               <input type="text" id="password" placeholder="Enter Passowrd" />
+               <button>hide</button>
+            </div>
+            <div class="submit">
+               <div>
+                  <button id="submit">Create Account</button>
+               </div>
+            </div>
+         </div>
+         <!---end register-->
+      </div>
+      <!---- end main-->
 
-<body>
-        <div class="main">
-                <div class="register">
-                        <div class="userNames">
-                                <div class="fName">
-                                        <span>First Name</span>
-                                        <input type="text" id="firstName" placeholder="Enter Your First Name">
-                                </div>
-                                <div class="lName">
-                                        <span>Last Name</span>
-                                        <input type="text" id="lastName" placeholder="Enter Your Last Name">
-                                </div>
-                        </div>
-                        <div class="email">
-                                <span>Email</span>
-                                <input type="text" id="email" placeholder="Enter Your Email Id">
-                        </div>
-                        <div class="password">
-                                <span>Password</span>
-                                <input type="text" id="password" placeholder="Enter Passowrd">
-                                <button>hide</button>
-                        </div>
-                </div><!---end register-->
-                <div class="submit">
-                        <button id="submit">Create Account</button>
-                </div>
-        </div> <!---- end main-->
-
-        <script src="./API/services/registeration.js"></script>
-</body>
-
+      <script src="./API/services/registeration.js"></script>
+   </body>
 </html>
