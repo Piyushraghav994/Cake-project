@@ -1,6 +1,7 @@
 const User = require("../models/userModel");
 const generateToken = require("../configs/generateToken");
 const asyncHandler = require("express-async-handler");
+const { StatusCodes } = require("http-status-codes");
 
 const registieredUser = asyncHandler(async (req, res) => {
    const { name, email, password, pic } = req.body;
@@ -12,7 +13,10 @@ const registieredUser = asyncHandler(async (req, res) => {
 
    const userExists = await User.findOne({ email });
    if (userExists) {
-      res.status(400);
+      res.status(StatusCodes.BAD_REQUEST).json({
+         message: "User is alredy exists",
+         data: userExists,
+      });
       throw new Error("User is alredy exists");
    }
 
@@ -31,7 +35,10 @@ const registieredUser = asyncHandler(async (req, res) => {
          token: generateToken(user._id),
       });
    } else {
-      res.status(400);
+      res.status(StatusCodes.NOT_FOUND).json({
+         message: "Oops!! User not Found",
+         data: null,
+      });
       throw new Error("Oops!! User not Found");
    }
 });
