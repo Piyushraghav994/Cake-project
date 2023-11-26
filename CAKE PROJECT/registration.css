@@ -4,7 +4,7 @@
 }
 
 body{
-   background-image:url("dark\ cake.jpg");
+   background-image:url("./images/cake.jpg");
    background-size:cover;
     background-size:103rem; 
     /* background: rgba(211,211,211,.5); */
@@ -13,6 +13,7 @@ body{
 div.main{
     width:400px;
     margin:100px auto 0px auto;
+    /* background: url('./images/dark\ cake.jpg'); */
 }
 h2{
     text-align: center;
