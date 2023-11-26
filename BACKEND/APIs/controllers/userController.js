@@ -4,17 +4,21 @@ const asyncHandler = require("express-async-handler");
 const { StatusCodes } = require("http-status-codes");
 
 const registieredUser = asyncHandler(async (req, res) => {
+   console.log("start..");
    const { name, email, password, pic } = req.body;
 
    if (!name || !email || !password) {
-      res.status(400);
+      res.status(StatusCodes.NOT_FOUND).json({
+         message: "Please Enter all the Feilds",
+         data: null,
+      });
       throw new Error("Please Enter all the Feilds");
    }
 
    const userExists = await User.findOne({ email });
    if (userExists) {
       res.status(StatusCodes.BAD_REQUEST).json({
-         message: "User is alredy exists",
+         message: "User is alredy exists in our database",
          data: userExists,
       });
       throw new Error("User is alredy exists");
@@ -59,7 +63,10 @@ const authUser = asyncHandler(async (req, res) => {
          token: generateToken(user._id),
       });
    } else {
-      res.status(401);
+      res.status(StatusCodes.BAD_REQUEST).json({
+         message: "Invalid Email or Password",
+         data: null,
+      });
       throw new Error("Invalid Email or Password");
    }
 });

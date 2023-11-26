@@ -3,7 +3,6 @@ const {
    registieredUser,
    authUser,
    _user,
-
 } = require("../controllers/userController");
 const { protect } = require("../middleware/authUser");
 const userRouter = Router();
