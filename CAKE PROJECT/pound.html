@@ -11,16 +11,16 @@
 <body>
     
   
-    <header class="header">
-        <a href="#" class="cakelogo"> <i class="fa-solid fa-cake-candles"></i>cake</a>
+    <header class="header" id="header">
+        <a href="project.html" class="cakelogo"> <i class="fa-solid fa-cake-candles"></i>𝓒𝓢 𝓬𝓪𝓴𝓮 𝔀𝓪𝓵𝓪</a>
 
 
     <nav class="navbar">
         <a href="index.html">Home</a>
-        <a href="#">Shop</a>
-        <a href="#">about</a>
-        <a href="#">review</a>
-        <a href="#">blog</a>
+        <a href="product.html">Shop</a>
+        <a href="#about">about</a>
+        <a href="#review">review</a>
+        <a href="#blogs">blog</a>
         <a href="contact.html">Contact</a>
     </nav>
 
@@ -28,11 +28,69 @@
 
      <div class="icons">
         <i id ="menubtn" class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-magnifying-glass"></i>
-        <i class="fa-sharp fa-solid fa-cart-shopping"></i>
-        <i class="fa-solid fa-user"></i>
+        <i class="fa-solid fa-magnifying-glass"  id="search-btn"></i>
+        <i class="fa-sharp fa-solid fa-cart-shopping" id="cart-btn"></i>
+         <i class="fa-solid fa-user" id="Profile-btn"></i>
+       
+
+        <div class="search-form">
+            <input type="searchbtn" id="search-box" placeholder="Search the items">
+            <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
+        </div> 
+
     </div>
 
+    <div class="cart-item-container">
+        <div class="cart-item">
+            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+            <img src="images/project background.jpg" alt="">
+            <div class="content">
+                <h3>Cart-item 01</h3>
+                <div class="price">Rs.550</div>
+            </div>  
+        </div>
+        <div class="cart-item">
+            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+            <img src="images/coconut cake.jpg" alt="">
+            <div class="content">
+                <h3>Cart-item 02</h3>
+                <div class="price">Rs.550</div>
+            </div>  
+        </div>
+        <div class="cart-item">
+            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+            <img src="images/coffee cake.jpg" alt="">
+            <div class="content">
+                <h3>Cart-item 03</h3>
+                <div class="price">Rs.550</div>
+            </div>  
+        </div>
+        <a href="#" class="btn">Checkout now</a>
+    </div>
+
+     <!-- Profile page start -->
+     <div class="Profile-item-container">
+        <div class="Profile-item">
+            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+            <div class="content">
+              <a href="login.html"><h3>Login</h3></a>  
+            </div>  
+        </div>
+        <div class="Profile-item">
+            <div class="content">
+                <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+              <a href="registration.html"><h3>Register</h3></a>  
+            </div>  
+        </div>
+        <div class="Profile-item">
+            <div class="content">
+                <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+              <a href="#"><h3>logout</h3></a>  
+            </div>  
+        </div>
+    
+    </div>
+    <!-- Profile page End -->
 </header>
 
 <section class="about">
@@ -53,6 +111,6 @@
             </div>
         </section>
        
-
+        <script src="project.js"></script>
 </body>
 </html>
