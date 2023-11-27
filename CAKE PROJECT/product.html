@@ -1,637 +1,708 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <link rel="stylesheet" href="project.css">
-     <!-- font osm css link -->
-     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-     
-</head>
-<body>
-     <!-- page header -->
-     <header class="header">
-        <a href="#" class="cakelogo"> <i class="fa-solid fa-cake-candles"></i>cake</a>
+   <head>
+      <meta charset="UTF-8" />
+      <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+      <title>Document</title>
+      <link rel="stylesheet" href="project.css" />
+      <!-- font osm css link -->
+      <link
+         rel="stylesheet"
+         href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      />
+   </head>
+   <body>
+      <!-- page header -->
+      <header class="header" id="header">
+         <a href="project.html" class="cakelogo">
+            <i class="fa-solid fa-cake-candles"></i>𝓒𝓢 𝓬𝓪𝓴𝓮 𝔀𝓪𝓵𝓪</a
+         >
 
+         <nav class="navbar">
+            <a href="index.html">Home</a>
+            <a href="product.html">Shop</a>
+            <a href="#about">about</a>
+            <a href="#review">review</a>
+            <a href="#blogs">blog</a>
+            <a href="contact.html">Contact</a>
+         </nav>
 
-    <nav class="navbar">
-        <a href="index.html">Home</a>
-        <a href="product.html">Shop</a>
-        <a href="#about">about</a>
-        <a href="#">review</a>
-        <a href="#">blog</a>
-        <a href="contact.html">Contact</a>
-    </nav>
+         <div class="icons">
+            <i id="menubtn" class="fa-solid fa-bars"></i>
+            <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
+            <i class="fa-sharp fa-solid fa-cart-shopping" id="cart-btn"></i>
+            <span
+               style="
+                  position: absolute;
+                  border: 2px solid red;
+                  width: 1.4rem;
+                  height: 1.4rem;
+                  background: red;
+                  border-radius: 50%;
+                  padding: auto;
+                  display: flex;
+                  justify-content: center;
+                  align-items: center;
+                  top: 24%;
+                  left: 87.5%;
+               "
+               >4</span
+            >
+            <i class="fa-solid fa-user" id="Profile-btn"></i>
 
-     
-
-     <div class="icons">
-        <i id ="menubtn" class="fa-solid fa-bars"></i>
-        <i class="fa-solid fa-magnifying-glass" id="search-btn"></i>
-        <i class="fa-sharp fa-solid fa-cart-shopping"  id="cart-btn"></i>
-        <i class="fa-solid fa-user"></i>
-    </div>
-
-    <div class="search-form">
-        <input type="searchbtn" id="search-box" placeholder="Search the items">
-        <label for="search-box" class="fa-solid fa-magnifying-glass"></label>
-    </div> 
-
-    <div class="cart-item-container">
-        <div class="cart-item">
-            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
-            <img src="images/project background.jpg" alt="">
-            <div class="content">
-                <h3>Cart-item 01</h3>
-                <div class="price">Rs.550</div>
-            </div>  
-        </div>
-        <div class="cart-item">
-            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
-            <img src="images/coconut cake.jpg" alt="">
-            <div class="content">
-                <h3>Cart-item 02</h3>
-                <div class="price">Rs.550</div>
-            </div>  
-        </div>
-        <div class="cart-item">
-            <span class="fa-solid fa-circle fa-spin" id="circle"></span>
-            <img src="images/coffee cake.jpg" alt="">
-            <div class="content">
-                <h3>Cart-item 03</h3>
-                <div class="price">Rs.550</div>
-            </div>  
-        </div>
-        <a href="#" class="btn">Checkout now</a>
-    </div>
-
-
-</header>
-
-<section class="product">
-        
-    <div class="heading2">
-        <span>Our Category</span>
-    </div>
-    
-     <div class="box-container">
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="chocolate.html"class="fa-solid fa-eye"></a>
+            <div class="search-form">
+               <input
+                  type="searchbtn"
+                  id="search-box"
+                  placeholder="Search the items"
+               />
+               <label
+                  for="search-box"
+                  class="fa-solid fa-magnifying-glass"
+               ></label>
             </div>
-                <div class="img">
-                    <img src="images/project background.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Chocolate cake</h3>
-                    <div class="price">Rs.699</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
+         </div>
 
-
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="butterscoth.html"class="fa-solid fa-eye"></a>
+         <div class="cart-item-container">
+            <div class="cart-item">
+               <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+               <img src="images/project background.jpg" alt="" />
+               <div class="content">
+                  <h3>Cart-item 01</h3>
+                  <div class="price">Rs.550</div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/velvety-butterscotch-delight_1.jpg.webp" alt="">
-                </div>
-                <div class="content">
-                    <h3>Butterscotch cake</h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="caramel.html"class="fa-solid fa-eye"></a>
+            <div class="cart-item">
+               <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+               <img src="images/coconut cake.jpg" alt="" />
+               <div class="content">
+                  <h3>Cart-item 02</h3>
+                  <div class="price">Rs.550</div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/caramel.jpg.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Caramel cake</h3>
-                    <div class="price">Rs.589</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
+            <div class="cart-item">
+               <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+               <img src="images/coffee cake.jpg" alt="" />
+               <div class="content">
+                  <h3>Cart-item 03</h3>
+                  <div class="price">Rs.550</div>
+               </div>
+            </div>
+            <a href="#" class="btn">Checkout now</a>
+         </div>
 
-        <div class="box">
-            <div class="icon">
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="mango.html"class="fa-solid fa-eye"></a>
+         <!-- Profile page start -->
+         <div class="Profile-item-container">
+            <div class="Profile-item">
+               <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+               <div class="content">
+                  <a href="login.html"><h3>Login</h3></a>
+               </div>
+            </div>
+            <div class="Profile-item">
+               <div class="content">
+                  <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+                  <a href="registration.html"><h3>Register</h3></a>
+               </div>
+            </div>
+            <div class="Profile-item">
+               <div class="content">
+                  <span class="fa-solid fa-circle fa-spin" id="circle"></span>
+                  <a href="#"><h3>logout</h3></a>
+               </div>
+            </div>
+         </div>
+         <!-- Profile page End -->
+      </header>
+
+      <section class="product">
+         <div class="heading2">
+            <span>Our Category</span>
+         </div>
+
+         <div class="box-container">
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="chocolate.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/project background.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Chocolate cake</h3>
+                  <div class="price">Rs.699</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
 
-            <div class="img">
-                    <img src="images/Mango-cake_1920x1080.jpg" alt="">
-                </div>
-                <div class="content">
-                        <h3>Mango cake</h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="butterscoth.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img
+                     src="images/velvety-butterscotch-delight_1.jpg.webp"
+                     alt=""
+                  />
+               </div>
+               <div class="content">
+                  <h3>Butterscotch cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
 
-        
-        
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="cartoon.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/cartoon(1).jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Cartoon cake</h3>
-                    <div class="price">Rs.500</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-        
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="couplecake.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/cake for project.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Couple cake</h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-        
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="dryfruit.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/dry-fruits-cake-500x500.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Dryfruit cake</h3>
-                    <div class="price">Rs.899</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="fruit.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/fruit cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Fruit cake</h3>
-                    <div class="price">Rs.799</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="vanilla.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/vanilla cake.jpg.webp" alt="">
-                </div>
-                <div class="content">
-                    <h3>Vanilla cake</h3>
-                    <div class="price">Rs.599</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="pineapple.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/p-classic-pineapple-cake-with-cherry-toppings-half-kg--4766-m.webp" alt="">
-                </div>
-                <div class="content">
-                    <h3>pineapple cake</h3>
-                    <div class="price">Rs.749</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="pound.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/pound cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Pound cake</h3>
-                    <div class="price">Rs.699</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="chiffon.html"class="fa-solid fa-eye"></a>
-            </div>
-                <div class="img">
-                    <img src="images/chiffon-cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>chiffon cake</h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-
-
-       
-
-        <div class="box">
-            <div class="icon">
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="forestcake.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="caramel.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/caramel.jpg.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Caramel cake</h3>
+                  <div class="price">Rs.589</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
 
-            <div class="img">
-                    <img src="images/forest.jpg" alt="">
-                </div>
-                <div class="content">
-                        <h3>Forest cake </h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="mango.html" class="fa-solid fa-eye"></a>
+               </div>
+
+               <div class="img">
+                  <img src="images/Mango-cake_1920x1080.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Mango cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
 
-        
-        
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="carrot.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="cartoon.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/cartoon(1).jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Cartoon cake</h3>
+                  <div class="price">Rs.500</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/Carrot cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Carrot cake</h3>
-                    <div class="price">Rs.500</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
 
-        
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="cheese.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="couplecake.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/cake for project.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Couple cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/cheese cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Cheese cake</h3>
-                    <div class="price">Rs.550</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-        
-        <div class="box">
 
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="Butter.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="dryfruit.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/dry-fruits-cake-500x500.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Dryfruit cake</h3>
+                  <div class="price">Rs.899</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/buttercake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Butter cake</h3>
-                    <div class="price">Rs.899</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
 
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="coffee.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="fruit.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/fruit cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Fruit cake</h3>
+                  <div class="price">Rs.799</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/Coffee cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Coffee cake</h3>
-                    <div class="price">Rs.799</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
 
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="cakepop.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="vanilla.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/vanilla cake.jpg.webp" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Vanilla cake</h3>
+                  <div class="price">Rs.599</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/Cake pop.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Cake pop</h3>
-                    <div class="price">Rs.599</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
 
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="strawberry.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="pineapple.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img
+                     src="images/p-classic-pineapple-cake-with-cherry-toppings-half-kg--4766-m.webp"
+                     alt=""
+                  />
+               </div>
+               <div class="content">
+                  <h3>pineapple cake</h3>
+                  <div class="price">Rs.749</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/strawberry cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Strawberry cake</h3>
-                    <div class="price">Rs.599</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
-
-
-        <div class="box">
-
-            <div class="icon">
-
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="bundt.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="pound.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/pound cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Pound cake</h3>
+                  <div class="price">Rs.699</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/budnt cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Bundt cake </h3>
-                    <div class="price">Rs.749</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div>
 
-
-        <div class="box">
-
-            <div class="icon">
-        
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="hummingbird.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="chiffon.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/chiffon-cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>chiffon cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/humming bird.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Hummingbird cake</h3>
-                    <div class="price">Rs</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div> 
-        <div class="box">
 
-            <div class="icon">
-        
-                <a href="#"class="fa-solid fa-cart-shopping"></a>
-                <a href="#"class="fa-solid fa-heart"></a>
-                <a href="Coconutcake.html"class="fa-solid fa-eye"></a>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="forestcake.html" class="fa-solid fa-eye"></a>
+               </div>
+
+               <div class="img">
+                  <img src="images/forest.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Forest cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
             </div>
-                <div class="img">
-                    <img src="images/coconut cake.jpg" alt="">
-                </div>
-                <div class="content">
-                    <h3>Coconut cake</h3>
-                    <div class="price">Rs</div>
-                    <div class="stars">
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-solid fa-star"></i>
-                        <i class="fa-regular fa-star"></i>
-                    </div>
-                </div>
-        </div> 
 
-       
- 
-        </div>
-    </section>
-<script src="images/cake.js"></script>
-<!-- about section here -->
-</body>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="carrot.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/Carrot cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Carrot cake</h3>
+                  <div class="price">Rs.500</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="cheese.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/cheese cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Cheese cake</h3>
+                  <div class="price">Rs.550</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="Butter.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/buttercake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Butter cake</h3>
+                  <div class="price">Rs.899</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="coffee.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/Coffee cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Coffee cake</h3>
+                  <div class="price">Rs.799</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="cakepop.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/Cake pop.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Cake pop</h3>
+                  <div class="price">Rs.599</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="strawberry.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/strawberry cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Strawberry cake</h3>
+                  <div class="price">Rs.599</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="bundt.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/budnt cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Bundt cake</h3>
+                  <div class="price">Rs.749</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="hummingbird.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/humming bird.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Hummingbird cake</h3>
+                  <div class="price">Rs</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+            <div class="box">
+               <div class="icon">
+                  <a
+                     id="singleProductCart"
+                     href="#"
+                     class="fa-solid fa-cart-shopping"
+                  ></a>
+                  <a href="#" class="fa-solid fa-heart"></a>
+                  <a href="Coconutcake.html" class="fa-solid fa-eye"></a>
+               </div>
+               <div class="img">
+                  <img src="images/coconut cake.jpg" alt="" />
+               </div>
+               <div class="content">
+                  <h3>Coconut cake</h3>
+                  <div class="price">Rs</div>
+                  <div class="stars">
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-solid fa-star"></i>
+                     <i class="fa-regular fa-star"></i>
+                  </div>
+               </div>
+            </div>
+         </div>
+      </section>
+
+      <script src="./cartFunctionality.js"></script>
+      <script src="./project.js"></script>
+      <!-- about section here -->
+   </body>
 </html>
-
-           
-        
-        
-
-   
