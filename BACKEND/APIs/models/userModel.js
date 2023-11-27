@@ -5,7 +5,7 @@ const UserModel = mongoose.Schema(
       name: { type: String, required: true, lowercase: true },
       email: {
          type: String,
-         required: [true, "Please Fill all the Fields."],
+         required: true,
          unique: true,
       },
       password: { type: String, required: true },

@@ -6,8 +6,8 @@ const cors = require("cors");
 
 connectDatabase();
 const app = express();
-app.use(cors);
 app.use(express.json());
+app.use(cors());
 app.use("/api/user", userRouter);
 
 module.exports = app;

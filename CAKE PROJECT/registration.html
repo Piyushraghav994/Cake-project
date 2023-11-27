@@ -10,24 +10,42 @@
    <body>
       <div class="registration-form">
          <h1>Registartion Form</h1>
-   
-         <form action="#" method="Post">
-            <p>Full Name </p>
-            <input type="text " name="Full name" placeholder="Enter the full name ">
-         
+         <div>
+            <p>Full Name</p>
+            <input
+               id="firstName"
+               type="text "
+               name="firstName"
+               placeholder="Enter the first name "
+            />
+
             <p>Last name</p>
-            <input type="text " name="user name" placeholder="Enter the last name ">
-         
+            <input
+               id="lastName"
+               type="text "
+               name="user name"
+               placeholder="Enter the last name "
+            />
+
             <p>Email</p>
-            <input type="email " name="email" placeholder="Enter the email">
-          
+            <input
+               id="email"
+               type="email"
+               name="email"
+               placeholder="Enter the email"
+            />
+
             <p>Password</p>
-            <input type="password " name="password" placeholder="Enter the password ">
-      
+            <input
+               id="password"
+               type="password "
+               name="password"
+               placeholder="Enter the password "
+            />
+
             <button id="submit">Create Account</button>
-          </form>
-  
+         </div>
       </div>
-         <script src="./API/services/registeration.js"></script>
+      <script src="./API/services/registeration.js"></script>
    </body>
 </html>
