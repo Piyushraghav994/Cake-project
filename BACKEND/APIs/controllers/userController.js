@@ -4,7 +4,6 @@ const asyncHandler = require("express-async-handler");
 const { StatusCodes } = require("http-status-codes");
 
 const registieredUser = asyncHandler(async (req, res) => {
-   console.log("start..");
    const { name, email, password, pic } = req.body;
 
    if (!name || !email || !password) {

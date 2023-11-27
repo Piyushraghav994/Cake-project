@@ -6,17 +6,15 @@ const lastUserName = document.getElementById("lastName");
 const userEmail = document.getElementById("email");
 const userPassword = document.getElementById("password");
 
-submitBtn.addEventListener("click", () => {
+submitBtn.addEventListener("click", async () => {
    if (!firstUserNameInput || !lastUserName || !userEmail) {
       alert("Oops!! something went wrong");
       return;
    }
-   console.log(
-      firstUserNameInput.value,
-      lastUserName.value,
-      userEmail.value,
-      userPassword.value
-   );
+   console.log(firstUserNameInput.value);
+   console.log(lastUserName.value);
+   console.log(userEmail.value);
+   console.log(userPassword.value);
 
    const options = {
       method: "POST",
@@ -25,14 +23,30 @@ submitBtn.addEventListener("click", () => {
       },
       body: JSON.stringify({
          name: `${firstUserNameInput} ${lastUserName}`,
-         email: userEmail,
+         email: `${userEmail}`,
          password: userPassword,
       }),
    };
-   fetch("http://127.0.0.1:8080/api/user", options)
-      .then((response) => {
-         console.log("before response.json");
-         response.json();
-      })
-      .then((json) => console.log(json));
+   const res = await fetch("http://127.0.0.1:8080/api/user/", options);
+   console.log(await res.json());
 });
+
+// submitBtn.addEventListener("click", () => {
+//    const userData = {
+//       name: `${firstUserNameInput} ${lastUserName}`,
+//       email: `${userEmail}`,
+//       password: userPassword,
+//    };
+//    const req = new XMLHttpRequest();
+
+//       req.open("POST", "http://127.0.0.1:8080/api/user/");
+
+//       req.setRequestHeader("Content-Type", "application/json");
+
+//       req.addEventListener("load", function () {
+//          console.log(req.response());
+//       });
+
+//       req.send(JSON.stringify(userData));
+
+// });
