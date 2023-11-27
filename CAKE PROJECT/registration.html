@@ -8,49 +8,44 @@
    </head>
 
    <body>
-      <div class="main">
-         <div class="register">
-            <div class="userNames">
-               <div class="fName">
-                  <span>First Name</span>
-                  <input
-                     type="text"
-                     id="firstName"
-                     placeholder="Enter Your First Name"
-                  />
-               </div>
-               <div class="lName">
-                  <span>Last Name</span>
-                  <input
-                     type="text"
-                     id="lastName"
-                     placeholder="Enter Your Last Name"
-                  />
-               </div>
-            </div>
-            <div class="email">
-               <span>Email</span>
-               <input
-                  type="text"
-                  id="email"
-                  placeholder="Enter Your Email Id"
-               />
-            </div>
-            <div class="password">
-               <span>Password</span>
-               <input type="text" id="password" placeholder="Enter Passowrd" />
-               <button>hide</button>
-            </div>
-            <div class="submit">
-               <div>
-                  <button id="submit">Create Account</button>
-               </div>
-            </div>
-         </div>
-         <!---end register-->
-      </div>
-      <!---- end main-->
+      <div class="registration-form">
+         <h1>Registartion Form</h1>
+         <div>
+            <p>Full Name</p>
+            <input
+               id="firstName"
+               type="text "
+               name="firstName"
+               placeholder="Enter the first name "
+            />
 
+            <p>Last name</p>
+            <input
+               id="lastName"
+               type="text "
+               name="user name"
+               placeholder="Enter the last name "
+            />
+
+            <p>Email</p>
+            <input
+               id="email"
+               type="email"
+               name="email"
+               placeholder="Enter the email"
+            />
+
+            <p>Password</p>
+            <input
+               id="password"
+               type="password "
+               name="password"
+               placeholder="Enter the password "
+            />
+
+            <button id="submit">Create Account</button>
+         </div>
+      </div>
       <script src="./API/services/registeration.js"></script>
    </body>
 </html>
