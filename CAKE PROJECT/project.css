@@ -46,7 +46,7 @@ section {
 
 
 .heading{
-    background-image: url(home\ cake2.jpg);
+    background-image: url(images/home\ cake2.jpg);
     background-size: cover;
     background-position: center;
     text-align: center;
@@ -1031,7 +1031,7 @@ input[type="submit"]:hover{
 }
 
 .login{
-    background-image: url(project\ background.jpg);
+    background-image: url(images/project\ background.jpg);
     background-size: cover;
 }
 
